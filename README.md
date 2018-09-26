@@ -42,3 +42,6 @@ v0.0.1_Alpha版本使用技术栈比较简单，主要先实现业务功能为�
 v0.0.1_Alpha的架构图如下：
 
 ![系统架构图](http://f1.yihuimg.com/TFS/upfile/common/10000025/2018-09-26/7f46f0c748a44194954d35e7e228ab14.jpg)
+
+### 联系我
+对本系统有意见或建议可向zhengguinan@163.com提出。谢谢阅读此文。
