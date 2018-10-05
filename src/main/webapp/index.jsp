@@ -4,6 +4,6 @@
     <title>SSM 框架整合</title>
 </head>
 <body>
-${user.id}：${user.username}
+ hello,world
 </body>
 </html>

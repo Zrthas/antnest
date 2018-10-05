@@ -23,4 +23,8 @@ public class UserController {
         String rs = user.getUsername()+":"+user.getId();
         return rs;
     }
+    @RequestMapping("/tonewurl")
+    public String toNewUrl(){
+        return "/user/userdem";
+    }
 }
