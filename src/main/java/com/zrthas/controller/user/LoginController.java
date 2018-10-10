@@ -15,7 +15,7 @@ import javax.annotation.Resource;
  * @date 2018/10/10
  */
 @Controller
-@RequestMapping("/user")
+@RequestMapping("/login")
 public class LoginController {
 
     @Resource
