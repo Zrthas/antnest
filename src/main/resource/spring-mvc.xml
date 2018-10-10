@@ -12,7 +12,10 @@
 
     <!-- 扫描web相关的bean -->
     <context:component-scan base-package="com.zrthas.controller"/>
-
+    <mvc:resources mapping="/js/**" location="/WEB-INF/views/resource/js/"/>
+    <mvc:resources mapping="/css/**" location="/WEB-INF/views/resource/css/"/>
+    <mvc:resources mapping="/images/**" location="/WEB-INF/views/resource/images/"/>
+    <mvc:default-servlet-handler />
     <!-- 开启SpringMVC注解模式 -->
     <mvc:annotation-driven >
         <!-- 消息转换器 -->

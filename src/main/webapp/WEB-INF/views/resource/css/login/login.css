@@ -1,0 +1,35 @@
+@charset "utf-8";
+html,body { font:14px/20px 微软雅黑,"Microsoft Yahei"; color:#555; background:url(../img/bg.jpg) no-repeat center top; background-size:cover;}
+.login-wrap { width: 742px; height:435px; background-color:#fff; background-color:rgba(255,255,255,.95); margin: 0 auto; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;_width: 742px;_height:435px;_background:#fff;}
+.login-wrap-fixed {position:fixed; left:50%; top:50%; margin-left:-371px; margin-top:-217px;_position:absolute;_width:742px;_height:235px;_background:#fff;}
+.login-tit { height: 38px; padding:35px 0;color:#4DB2EE;font-size:22px;text-align:left;width:548px;margin:0 auto;line-height:38px;}
+.login-tit img { display: block; margin-top:5px; padding-right:10px;}
+.login { position: relative; width: 700px; margin: 0 auto 0;}
+.signin-area { display: inline; float: left; margin: 0 20px 0 54px; width: 240px; padding:1px 17px;}
+.input-login-text { margin: 0 0 30px; padding:0; font-size: 18px; font-weight: 100; text-align: left; color:#838383;}
+.signin-area-bg { display: inline; float: left; width:255px; margin-top:0; min-height:253px; position: relative;}
+.input01 { padding:2px 2px 2px 10px; width:240px; height: 30px; line-height: 30px; border:1px solid #ccc; color:#868686; font-size: 16px;}
+.btn-signin { width: 254px; height: 36px; font-size: 16px;}
+.input-boxer {border:1px solid #dddddd;padding:6px 10px;color:#bbbbbb;border-radius:3px;background:#fff;line-height:26px;}
+.input-boxer span{display:block;}
+.input-boxer input{border:none;height:24px;line-height:24px;width:207px;color:#bbbbbb;_width:188px;_border:0 none; outline:none;}
+.input-boxer.focus{border-color:#3fd0a7;}
+.sign-input-a{width:255px;}
+.sign-input-a a{padding:10px 0;}
+.remember-password{font-size:13px;}
+.remember-password a{color:#007cd9;}
+.icon-chkbox { display: inline-block; width:16px; height:17px; margin-right: 8px; background: url(../img/icon-checkbox.png) no-repeat; vertical-align: middle; *display: inline; *zoom:1;}
+.icon-chkbox.checked { background-position: -16px 0;}
+.gou_boxer{cursor:pointer;}
+.news-boxer{max-width:309px;}
+.news-boxer .tit{color:#666666;font-size:16px;padding-bottom:16px;padding-left:30px;}
+.news-boxer .tit .iconfont {margin-right:5px; margin-left:7px; position:relative; top:-2px;}
+.news-boxer ul{padding-left:30px;border-left:1px solid #e6e6e6;}
+.news-boxer li{padding:12px 22px 12px 2px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;position:relative;}
+.news-boxer li a{color:#666666;font-size:14px;}
+.news-boxer li a:hover{color:#3fd0a7;}
+.news-boxer li span{display:block;width:16px;height:16px;color:#fff;background:#f13f40;line-height:16px;text-align:center;font-size:12px;position:absolute;right:0;top:12px;}
+
+.login-wrap-small {width: 396px; height:400px; _width: 396px;_height:400px;}
+.login-wrap-small.login-wrap-fixed{margin-left:-198px; margin-top:-200px; _width:396px;_height:200px;}
+.login-wrap-small .login-tit {width: 255px;}

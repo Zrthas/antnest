@@ -23,8 +23,18 @@ public class UserController {
         String rs = user.getUsername()+":"+user.getId();
         return rs;
     }
+
+    /**
+     * 跳转到新的页面测试
+     * @return
+     */
     @RequestMapping("/tonewurl")
     public String toNewUrl(){
         return "/user/userdem";
+    }
+
+    @RequestMapping("/tologinpage")
+    public String toLoginPage(){
+        return "/login/login";
     }
 }
