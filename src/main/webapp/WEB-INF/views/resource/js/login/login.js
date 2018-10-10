@@ -6,6 +6,11 @@ var ukey = "";// 验证码
 var utel = "";// 绑定手机
 var countdown = 60;
 
+
+function setUserCookie(){
+
+}
+
 $(function() {
 	eventInit();
 	// 设置输入框

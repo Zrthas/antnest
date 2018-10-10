@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Build Future运维管理系统</title>
+    <title>蚁巢OA管理系统</title>
 
     <link rel="stylesheet" type="text/css" href="//f1.yihuimg.com/concat/cross_pc/1.1.1/iconfont/iconfont.css"/>
     <link rel="stylesheet" type="text/css" href="//f1.yihuimg.com/concat/cross_pc/1.1.1/cross/css/cross.css"/>
@@ -46,7 +46,8 @@
 
         <div class="landing-con bgc-fff mr50 fr">
             <div class="p30">
-                <h2 class="c-f18 c-666 ptb10">欢迎使用监控管理系统</h2>
+                <%--改进：公司信息可配置--%>
+                <h2 class="c-f18 c-666 ptb10">欢迎使用蚁巢OA管理系统</h2>
                 <div class="form-layout form-inline mt10">
                     <div class="control-group">
                         <div class="control-form c-position-r">
@@ -160,6 +161,8 @@
 
 <script src="//f1.yihuimg.com/TFS/upfile/realfile/1000000/yihuSjax.js"></script>
 <script type="text/javascript" src="//f1.yihuimg.com/concat/cross_pc/1.1.1/cross/js/jquery/1.8.3/jquery.js"></script>
+<%--jq cookie cdn--%>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 <script type="text/javascript" src="//f1.yihuimg.com/concat/cross_pc/1.1.1/cross/js/cross.ui.js"></script>
 <link rel="stylesheet" href="//f1.yihuimg.com/concat/cross_pc/1.1.1/widget/artDialog/4.1.7/css/artDialog.min.css"
       type="text/css"/>
