@@ -43,4 +43,9 @@ public class LoginController {
     public String toLoginPage(){
         return "/login/login";
     }
+
+    @RequestMapping("toregister")
+    public String toRegister(){
+        return "/login/register";
+    }
 }

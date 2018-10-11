@@ -33,7 +33,7 @@
         <a href="//sso.yihu.cn/ApplicationUi/wbj2/login/wgw-intro.html" target="_parent">案例</a>
         <a href="//sso.yihu.cn/ApplicationUi/wbj2/login/partners.html" target="_parent">伙伴</a>
         <a href="//sso.yihu.cn/ApplicationUi/wbj2/login/news-list.html" target="_parent">公告</a>
-        <a href="/login/toregister" target="_parent">注册</a>
+        <a href="/login/tologinpage" target="_parent">登录</a>
     </div>
 </div>
 <div class="landing-main clearfix c-hidden h500">
@@ -48,7 +48,7 @@
         <div class="landing-con bgc-fff mr50 fr">
             <div class="p30">
                 <%--改进：公司信息可配置--%>
-                <h2 class="c-f18 c-666 ptb10">欢迎使用蚁巢OA管理系统</h2>
+                <h2 class="c-f18 c-666 ptb10">欢迎注册蚁巢OA管理系统</h2>
                 <div class="form-layout form-inline mt10">
                     <div class="control-group">
                         <div class="control-form c-position-r">
@@ -62,18 +62,16 @@
                             <i class="iconfont c-position-a c-999 landing-icon">&#xe60d;</i>
                         </div>
                     </div>
-                    <div class="control-group c-100 ptb10">
-                        <div id="divKeepPwd" class="control-form">
-                            <label class="checkbox control-line fl" data-toggle="checkbox">
-                                <input type="checkbox" class="c-hide" name="tags" value="1">
-                                <i class="icon-chkbox"></i>记住密码
-                            </label>
-                            <a id="forget-password" class="alinks alinks-blue fr" href="javascript:;">忘记密码？</a>
+                    <div class="control-group">
+                        <div class="control-form c-position-r">
+                            <input id="pwd" type="password" placeholder="再次输入密码" class="input-text">
+                            <i class="iconfont c-position-a c-999 landing-icon">&#xe60d;</i>
                         </div>
                     </div>
+
                     <div class="control-group c-100 ptb10">
                         <div class="control-form" style="height:24px">
-                            <a id="btnLogin" href="javascript:;" class="c-btn-full c-btn-blue h45">登录</a>
+                            <a id="btnLogin" href="javascript:;" class="c-btn-full c-btn-blue h45">注册</a>
                         </div>
                     </div>
                 </div>
