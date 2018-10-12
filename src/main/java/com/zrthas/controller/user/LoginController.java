@@ -34,9 +34,9 @@ public class LoginController {
      * 跳转到新的页面测试
      * @return
      */
-    @RequestMapping("tonewurl")
+    @RequestMapping("index")
     public String toNewUrl(){
-        return "/user/userdem";
+        return "/index";
     }
 
     @RequestMapping("tologinpage")
@@ -48,4 +48,10 @@ public class LoginController {
     public String toRegister(){
         return "/login/register";
     }
+
+    @RequestMapping("console")
+    public String console(){
+        return "home/console";
+    }
+
 }
