@@ -1,6 +1,7 @@
 package com.zrthas.dao.user;
 
 import com.zrthas.entity.user.UserEntity;
+import com.zrthas.entity.user.UserInfoEntity;
 
 import javax.annotation.Resource;
 
@@ -18,4 +19,11 @@ public interface UserEntityDao {
      * @param userEntity
      */
     int insertNewUser(UserEntity userEntity);
+
+    /**
+     * 插入用户详细信息
+     * @param userInfoEntity
+     * @return
+     */
+    int insertUserInfo(UserInfoEntity userInfoEntity);
 }
