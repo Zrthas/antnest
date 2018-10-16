@@ -22,7 +22,7 @@ public interface UserEntityDao {
 
     /**
      * 插入用户详细信息
-     * @param u
+     * @param userInfoEntity
      * @return
      */
     int insertUserInfo(UserInfoEntity userInfoEntity);
