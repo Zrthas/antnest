@@ -9,7 +9,7 @@
 
     <!-- 扫描service包下所有使用注解的类型 -->
     <context:component-scan base-package="com.zrthas.service"/>
-
+    <context:component-scan base-package="com.zrthas.dao"/>
     <!-- 配置数据库相关参数properties的属性：${url} -->
     <context:property-placeholder location="classpath:jdbc.properties"/>
 
@@ -42,6 +42,7 @@
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
         <!-- 给出需要扫描Dao接口包 -->
         <property name="basePackage" value="com.zrthas.dao"/>
+
     </bean>
 
     <!-- 配置事务管理器 -->

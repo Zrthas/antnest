@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 设置为IUserDao接口方法提供sql语句配置 -->
+<mapper namespace="com.zrthas.dao.user.UserEntityDao">
+
+    <select id="findUserExist" resultType="com.zrthas.entity.user.UserEntity" parameterType="com.zrthas.entity.user.UserEntity">
+        select user_login_name userLoginName,user_name userName from t_base_user t where t.user_login_name = #{userLoginName}
+    </select>
+
+    <insert id="insertNewUser" parameterType="com.zrthas.entity.user.UserEntity">
+        insert into t_base_user (user_id,user_name,user_login_name,user_identity_type,user_status) values (#{userId},#{userName},#{userLoginName},#{userIdentityType},#{userStatus})
+    </insert>
+
+</mapper>
