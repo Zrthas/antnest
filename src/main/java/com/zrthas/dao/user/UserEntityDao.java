@@ -20,10 +20,5 @@ public interface UserEntityDao {
      */
     int insertNewUser(UserEntity userEntity);
 
-    /**
-     * 插入用户详细信息
-     * @param userInfoEntity
-     * @return
-     */
-    int insertUserInfo(UserInfoEntity userInfoEntity);
+
 }

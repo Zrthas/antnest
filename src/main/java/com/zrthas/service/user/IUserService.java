@@ -9,4 +9,11 @@ public interface IUserService {
      * @return
      */
     Boolean findUserExist(UserEntity userEntity);
+
+    /**
+     * 插入新用户基本信息
+     * @param userEntity
+     * @return
+     */
+    Boolean insertNewUser(UserEntity userEntity);
 }

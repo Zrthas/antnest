@@ -20,6 +20,14 @@ public class UserService implements IUserService {
     @Override
     public Boolean findUserExist(UserEntity userEntity) {
         UserEntity resultEntity = userEntityDao.findUserExist(userEntity);
-        return !resultEntity.getUserId().isEmpty();
+        return !resultEntity.getUserName().isEmpty();
     }
+
+    @Override
+    public Boolean insertNewUser(UserEntity userEntity) {
+        Integer iResult = userEntityDao.insertNewUser(userEntity);
+        boolean b = iResult == 1 ? true : false;
+        return b;
+    }
+
 }

@@ -37,4 +37,22 @@
     <!-- 匹配所有请求 -->
     <url-pattern>/</url-pattern>
   </servlet-mapping>
+
+  <context-param>
+    <param-name>log4jConfigLocation</param-name>
+    <param-value>classpath:log4j.properties</param-value>
+  </context-param>
+
+  <context-param>
+    <param-name>log4jRefreshInterval</param-name>
+    <!-- 6秒 -->
+    <param-value>6000</param-value>
+  </context-param>
+
+  <listener>
+    <listener-class>
+      org.springframework.web.util.Log4jConfigListener
+    </listener-class>
+  </listener>
+
 </web-app>

@@ -174,6 +174,7 @@
 <script type="text/javascript" src="/js/login/jq.cookie.js"></script>
 <script type="text/javascript" src="/js/common/cookieoperation.js"></script>
 <script type="text/javascript" src="/js/login/md5.js"></script>
-<script type="text/javascript" src="/js/login/login.js"></script>
+<script type="text/javascript" src="/js/login/register.js?v=1"></script>
+
 </body>
 </html>

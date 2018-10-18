@@ -1,5 +1,7 @@
 package com.zrthas.entity.user;
 
+import com.zrthas.until.UUIDTool;
+
 /**
  * 对应数据库表：t_base_user
  * 字段在数据库有备份
@@ -7,6 +9,8 @@ package com.zrthas.entity.user;
  * @author zrthas
  */
 public class UserEntity {
+
+
 
     private String userId;
     private String userName;
@@ -52,5 +56,19 @@ public class UserEntity {
 
     public void setUserStatus(String userStatus) {
         this.userStatus = userStatus;
+    }
+
+    public UserEntity(){
+        this.setUserId(UUIDTool.getUUID());
+    }
+    @Override
+    public String toString() {
+        return "UserEntity{" +
+                "userId='" + userId + '\'' +
+                ", userName='" + userName + '\'' +
+                ", userLoginName=" + userLoginName +"" +
+                ", userIdentityType=" + userIdentityType +
+                ", userStatus=" + userIdentityType +
+                '}';
     }
 }
