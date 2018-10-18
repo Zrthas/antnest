@@ -19,6 +19,15 @@ public class UserModelEntity {
     public String userEmail;
     public String userBirthday;
     public String userRegIp;
+    public String userRegTime;
+
+    public String getUserRegTime() {
+        return userRegTime;
+    }
+
+    public void setUserRegTime(String userRegTime) {
+        this.userRegTime = userRegTime;
+    }
 
     public String getUserId() {
         return userId;
