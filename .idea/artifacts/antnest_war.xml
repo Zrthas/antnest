@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
   <artifact type="war" name="antnest:war">
     <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="ssm01.war">
+    <root id="archive" name="antnest.war">
       <element id="artifact" artifact-name="antnest:war exploded" />
     </root>
   </artifact>
