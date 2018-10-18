@@ -19,7 +19,7 @@ public class UserModelEntity {
     public String userEmail;
     public String userBirthday;
     public String userRegIp;
-
+    public String userRegTime;
     public String getUserId() {
         return userId;
     }
