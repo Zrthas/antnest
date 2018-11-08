@@ -11,4 +11,9 @@
         insert into t_base_user (user_id,user_name,user_login_name,user_identity_type,user_status) values (#{userId},#{userName},#{userLoginName},#{userIdentityType},#{userStatus})
     </insert>
 
+    <insert id="insertNewUserInfo" parameterType="com.zrthas.entity.user.UserInfoEntity">
+        insert into t_base_user (user_id,user_name,user_login_name,user_identity_type,user_status) values (#{userId},#{userName},#{userLoginName},#{userIdentityType},#{userStatus})
+    </insert>
+
+
 </mapper>

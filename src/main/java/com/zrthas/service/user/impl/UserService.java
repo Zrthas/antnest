@@ -2,6 +2,7 @@ package com.zrthas.service.user.impl;
 
 import com.zrthas.dao.user.UserEntityDao;
 import com.zrthas.entity.user.UserEntity;
+import com.zrthas.entity.user.UserInfoEntity;
 import com.zrthas.service.user.IUserService;
 import org.springframework.stereotype.Service;
 
@@ -26,6 +27,13 @@ public class UserService implements IUserService {
     @Override
     public Boolean insertNewUser(UserEntity userEntity) {
         Integer iResult = userEntityDao.insertNewUser(userEntity);
+        boolean b = iResult == 1 ? true : false;
+        return b;
+    }
+
+    @Override
+    public Boolean insertNewUserInfo(UserInfoEntity userInfoEntity) {
+        Integer iResult = userEntityDao.insertNewUserInfo(userInfoEntity);
         boolean b = iResult == 1 ? true : false;
         return b;
     }

@@ -1,6 +1,7 @@
 package com.zrthas.service.user;
 
 import com.zrthas.entity.user.UserEntity;
+import com.zrthas.entity.user.UserInfoEntity;
 
 public interface IUserService {
     /**
@@ -16,4 +17,11 @@ public interface IUserService {
      * @return
      */
     Boolean insertNewUser(UserEntity userEntity);
+
+    /**
+     * 插入用户信息信息
+     * @param userInfoEntity
+     * @return
+     */
+    Boolean insertNewUserInfo(UserInfoEntity userInfoEntity);
 }

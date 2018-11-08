@@ -57,12 +57,19 @@ public class LoginController {
         return resultParamEntity;
     }
 
+    /**
+     * 注册步骤1-基本信息注入
+     * @param request
+     * @param userEntity
+     * @param userInfoEntity
+     * @return
+     * @throws Exception
+     */
     @RequestMapping(value = "register",method = RequestMethod.POST)
     @ResponseBody
     public ResultParamEntity<UserEntity> registerUser(HttpServletRequest request, UserEntity userEntity, UserInfoEntity userInfoEntity) throws Exception {
         userInfoEntity.setUserId(userEntity.getUserId());
         userInfoEntity.setUserRegIp(GetIp.getUserIp(request));
-        String ip = GetIp.getUserIp(request);
         ResultParamEntity<UserEntity> resultParamEntity = new ResultParamEntity<UserEntity>();
         if (userService.insertNewUser(userEntity)){
             resultParamEntity.setCode(CodeValue.ACC_SUCCESS_CODE);
@@ -71,6 +78,14 @@ public class LoginController {
             resultParamEntity.setCode(CodeValue.ACC_FAIL_CODE);
             resultParamEntity.setMsg(CodeValue.ACC_FAIL_REGIESTER_MSG);
         }
+        return resultParamEntity;
+    }
+
+    public ResultParamEntity<UserInfoEntity> perfectUserInfo(HttpServletRequest request, UserEntity userEntity, UserInfoEntity userInfoEntity){
+        ResultParamEntity<UserInfoEntity> resultParamEntity = new ResultParamEntity<UserInfoEntity>();
+
+
+
         return resultParamEntity;
     }
 
